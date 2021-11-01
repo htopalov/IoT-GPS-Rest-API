@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Trails.Models
@@ -9,7 +8,8 @@ namespace Trails.Models
         [Key]
         public int Id { get; set; }
 
-        public DateTime Timestamp { get; set; }
+        [Required]
+        public string Timestamp { get; set; }
 
         public double Latitude { get; set; }
 
@@ -20,7 +20,7 @@ namespace Trails.Models
         public double Speed { get; set; }
 
         [ForeignKey(nameof(Device))]
-        public int DeviceId { get; set; }
+        public string DeviceId { get; set; }
 
         public Device Device { get; set; }
     }

@@ -5,12 +5,18 @@ namespace Trails.Models
 {
     public class Device
     {
+        public Device()
+        {
+            this.PositionData = new HashSet<PositionData>();
+        }
+
         [Key]
-        public int DeviceId { get; set; }
+        [MaxLength(15)]
+        public string DeviceId { get; set; }
 
         [Required]
-        [MaxLength(15)]
-        public string Imei { get; set; }
+        [MaxLength(50)]
+        public string Name { get; set; }
 
         [Required]
         [MaxLength(15)]
@@ -20,6 +26,8 @@ namespace Trails.Models
         public string Description { get; set; }
 
         public string AccessKey { get; set; }
+
+        public string Salt { get; set; }
 
         public ICollection<PositionData> PositionData { get; set; }
     }

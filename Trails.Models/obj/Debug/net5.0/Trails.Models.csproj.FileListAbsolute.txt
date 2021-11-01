@@ -1,0 +1,17 @@
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\Trails.Models.deps.json
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\Trails.Models.dll
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\ref\Trails.Models.dll
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\Trails.Models.pdb
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\Utilities.dll
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\Utilities.pdb
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.csproj.AssemblyReference.cache
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.AssemblyInfoInputs.cache
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.AssemblyInfo.cs
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.csproj.CoreCompileInputs.cache
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.dll
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\ref\Trails.Models.dll
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.pdb
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\Trails.Models.runtimeconfig.json
+D:\IoT Project\Trails\Trails.Models\bin\Debug\net5.0\Trails.Models.runtimeconfig.dev.json
+D:\IoT Project\Trails\Trails.Models\obj\Debug\net5.0\Trails.Models.genruntimeconfig.cache

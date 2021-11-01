@@ -1,0 +1,12 @@
+D:\IoT Project\Trails\Utilities\bin\Debug\net5.0\Utilities.deps.json
+D:\IoT Project\Trails\Utilities\bin\Debug\net5.0\Utilities.dll
+D:\IoT Project\Trails\Utilities\bin\Debug\net5.0\ref\Utilities.dll
+D:\IoT Project\Trails\Utilities\bin\Debug\net5.0\Utilities.pdb
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\Utilities.csproj.AssemblyReference.cache
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\Utilities.AssemblyInfoInputs.cache
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\Utilities.AssemblyInfo.cs
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\Utilities.csproj.CoreCompileInputs.cache
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\Utilities.dll
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\ref\Utilities.dll
+D:\IoT Project\Trails\Utilities\obj\Debug\net5.0\Utilities.pdb
