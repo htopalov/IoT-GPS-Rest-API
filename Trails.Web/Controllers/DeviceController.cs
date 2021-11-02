@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -45,6 +46,23 @@ namespace Trails.Web.Controllers
             }
 
             return Ok(mapper.Map<DeviceDtoGet>(device));
+        }
+
+        //api/Device/PositionData/1
+        [HttpGet("position-data-list/{id}")]
+        public async Task<ActionResult<IEnumerable<PositionDataDtoGet>>> GetListOfPositionDataForDeviceAsync(string id)
+        {
+            var device = await context.Devices.FindAsync(id);
+
+            if (device == null)
+            {
+                return NotFound(Messages.DeviceNotExist);
+            }
+
+            var positionData = await context.PositionData
+                .Where(x => x.DeviceId == id)
+                .ToListAsync();
+            return Ok(mapper.Map<IEnumerable<PositionDataDtoGet>>(positionData));
         }
 
         //api/Device/111111111111111

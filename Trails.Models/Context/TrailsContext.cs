@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Utilities;
 
 namespace Trails.Models.Context
@@ -25,11 +20,11 @@ namespace Trails.Models.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Device>()
-                .HasMany(pd => pd.PositionData)
-                .WithOne(d => d.Device)
-                .HasForeignKey(k => k.DeviceId)
-                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<PositionData>()
+                .HasOne(x => x.Device)
+                .WithMany(x => x.PositionData)
+                .HasForeignKey(x => x.DeviceId)
+                .OnDelete(DeleteBehavior.SetNull);
         }
     }
 }

@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Trails.Models.Context;
 
 namespace Trails.Models.Migrations
 {
     [DbContext(typeof(TrailsContext))]
-    partial class TrailsContextModelSnapshot : ModelSnapshot
+    [Migration("20211102193736_DeleteRuleForDevice")]
+    partial class DeleteRuleForDevice
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

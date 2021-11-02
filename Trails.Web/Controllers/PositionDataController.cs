@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using DeviceSecurity;
@@ -34,23 +33,6 @@ namespace Trails.Web.Controllers
             return Ok(mapper.Map<IEnumerable<PositionDataDtoGet>>(positionData));
         }
 
-        //api/PositionData/1
-        [HttpGet("{id}")]
-        public async Task<ActionResult<IEnumerable<PositionData>>> GetListOfPositionDataForDeviceAsync(string deviceId)
-        {
-            var device = await context.Devices.FindAsync(deviceId);
-
-            if (device == null)
-            {
-                return NotFound(Messages.DeviceNotExist);
-            }
-
-            var positionData = await context.PositionData
-                .Where(x => x.DeviceId == deviceId)
-                .ToListAsync();
-            return Ok(mapper.Map<IEnumerable<PositionDataDtoGet>>(positionData));
-        }
-
         //api/PositionData
         [HttpPost]
         [AuthKey]
@@ -64,7 +46,7 @@ namespace Trails.Web.Controllers
                 return NotFound(Messages.DeviceNotExist);
             }
 
-            positionDataModel.Timestamp = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss"); //yyyyMMddHHmmss
+            positionDataModel.Timestamp = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
 
             await context.PositionData.AddAsync(positionDataModel);
             await context.SaveChangesAsync();
