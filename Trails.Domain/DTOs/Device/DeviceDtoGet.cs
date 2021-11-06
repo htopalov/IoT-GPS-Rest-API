@@ -1,4 +1,4 @@
-﻿namespace Trails.Models.DTOs
+﻿namespace Trails.Domain.DTOs.Device
 {
     public class DeviceDtoGet
     {

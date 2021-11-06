@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Trails.Models.DTOs
+namespace Trails.Domain.DTOs.PositionData
 {
     public class PositionDataDtoPost
     {

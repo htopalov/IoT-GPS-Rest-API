@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Trails.Models
+namespace Trails.Domain.DTOs.PositionData
 {
-    public class PositionData
+    public class PositionDataDtoGet
     {
         [Key]
         public int Id { get; set; }
@@ -21,7 +21,5 @@ namespace Trails.Models
 
         [ForeignKey(nameof(Device))]
         public string DeviceId { get; set; }
-
-        public Device Device { get; set; }
     }
 }

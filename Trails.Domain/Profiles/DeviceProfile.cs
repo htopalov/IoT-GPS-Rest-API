@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
-using Trails.Models.DTOs;
+using Trails.Domain.DTOs.Device;
+using Trails.Domain.Models;
 
-namespace Trails.Models.Profiles
+namespace Trails.Domain.Profiles
 {
     public class DeviceProfile : Profile
     {

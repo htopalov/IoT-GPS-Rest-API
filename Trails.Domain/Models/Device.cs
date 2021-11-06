@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Trails.Models
+namespace Trails.Domain.Models
 {
     public class Device
     {
@@ -25,10 +25,8 @@ namespace Trails.Models
         [MaxLength(200)]
         public string Description { get; set; }
 
-        public string AccessKey { get; set; }
+        public string Password { get; set; }
 
-        public string Salt { get; set; }
-
-        public ICollection<PositionData> PositionData { get; set; }
+        public virtual ICollection<PositionData> PositionData { get; set; }
     }
 }
