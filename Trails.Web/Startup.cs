@@ -1,7 +1,5 @@
-using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,8 +21,7 @@ namespace Trails.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TrailsDataContext>(opt=> 
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<TrailsDataContext>();
             services.AddAutoMapper(typeof(Device),typeof(PositionData));
             services.AddControllers();
             services.AddSwaggerGen(c =>

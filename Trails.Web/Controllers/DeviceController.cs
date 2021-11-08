@@ -85,7 +85,7 @@ namespace Trails.Web.Controllers
 
             await context.Devices.AddAsync(deviceModel);
             await context.SaveChangesAsync();
-            return CreatedAtRoute(nameof(GetDeviceAsync), new { Id = deviceDtoPost.DeviceId }, new { deviceDtoPost});
+            return CreatedAtRoute(nameof(GetDeviceAsync), new { Id = deviceDtoPost.DeviceId }, deviceDtoPost);
         }
 
         [HttpDelete("{id}")]

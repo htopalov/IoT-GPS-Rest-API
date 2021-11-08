@@ -1,14 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Trails.Configurations;
 using Trails.Domain.Models;
 
 namespace Trails.Data
 {
     public class TrailsDataContext : DbContext
     {
-        public TrailsDataContext(DbContextOptions<TrailsDataContext> options)
-            :base()
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(Config.CONNECTION_STRING);
+            }
         }
 
         public virtual DbSet<Device> Devices { get; set; }
