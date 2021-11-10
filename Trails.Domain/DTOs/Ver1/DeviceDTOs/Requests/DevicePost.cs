@@ -1,15 +1,9 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Trails.Domain.Models
+namespace Trails.Domain.DTOs.Ver1.DeviceDTOs.Requests
 {
-    public class Device
+    public class DevicePost
     {
-        public Device()
-        {
-            this.PositionData = new HashSet<PositionData>();
-        }
-
         [Key]
         [MaxLength(15)]
         public string DeviceId { get; set; }
@@ -25,8 +19,7 @@ namespace Trails.Domain.Models
         [MaxLength(200)]
         public string Description { get; set; }
 
+        [Required]
         public string PasswordHash { get; set; }
-
-        public virtual ICollection<PositionData> PositionData { get; set; }
     }
 }

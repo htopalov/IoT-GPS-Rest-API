@@ -1,15 +1,11 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Trails.Domain.Models
+namespace Trails.Domain.DTOs.Ver1.PositionDataDTOs.Responses
 {
-    public class PositionData
+    public class PositionDataGet
     {
-        [Key]
         public Guid DataId { get; set; }
 
-        [Required]
         public string Timestamp { get; set; }
 
         public double Latitude { get; set; }
@@ -20,9 +16,6 @@ namespace Trails.Domain.Models
 
         public double Speed { get; set; }
 
-        [ForeignKey(nameof(Device))]
         public string DeviceId { get; set; }
-
-        public virtual Device Device { get; set; }
     }
 }

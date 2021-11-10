@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <ProjectReference Include="..\Trails.Data\Trails.Data.csproj" />
+    <ProjectReference Include="..\Trails.Domain\Trails.Domain.csproj" />
   </ItemGroup>
 
 </Project>
