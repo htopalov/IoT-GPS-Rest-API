@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails.Web", "Trails\Trails.Web.csproj", "{C8C93D68-ADF9-452F-BF4A-CDB7693A8EF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails", "Trails\Trails.csproj", "{C8C93D68-ADF9-452F-BF4A-CDB7693A8EF3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails.Data", "Trails.Data\Trails.Data.csproj", "{20B8B32B-4663-4284-9614-8D255E804EF1}"
 EndProject
