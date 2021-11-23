@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Trails.Common;
 
 namespace Trails.Domain.Models
 {
@@ -11,18 +12,18 @@ namespace Trails.Domain.Models
         }
 
         [Key]
-        [MaxLength(15)]
+        [MaxLength(DeviceValidationConstants.DEVICE_ID_MAX_LENGTH)]
         public string DeviceId { get; set; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(DeviceValidationConstants.DEVICE_NAME_MAX_LENGTH)]
         public string Name { get; set; }
 
         [Required]
-        [MaxLength(15)]
+        [MaxLength(DeviceValidationConstants.DEVICE_SIM_CARD_NUMBER_MAX_LENGTH)]
         public string SimCardNumber { get; set; }
 
-        [MaxLength(200)]
+        [MaxLength(DeviceValidationConstants.DEVICE_DESCRIPTION_MAX_LENGTH)]
         public string Description { get; set; }
 
         public string PasswordHash { get; set; }

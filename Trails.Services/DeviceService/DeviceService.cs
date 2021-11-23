@@ -29,7 +29,7 @@ namespace Trails.Services.DeviceService
                 return null;
             }
 
-            return device.PositionData.ToList();
+            return dataContext.PositionData.Where(x => x.DeviceId == deviceId).ToList(); ;
         }
 
         public async Task<Device> GetDeviceByIdAsync(string deviceId)

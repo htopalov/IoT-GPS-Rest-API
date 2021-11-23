@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails.Web", "Trails\Trails.Web.csproj", "{C8C93D68-ADF9-452F-BF4A-CDB7693A8EF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails", "Trails\Trails.csproj", "{C8C93D68-ADF9-452F-BF4A-CDB7693A8EF3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails.Data", "Trails.Data\Trails.Data.csproj", "{20B8B32B-4663-4284-9614-8D255E804EF1}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails.Routes", "Trails.Routes\Trails.Routes.csproj", "{2DCE348E-37D7-4AD4-8711-C1946CAA014E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails.Services", "Trails.Services\Trails.Services.csproj", "{46AFC2C6-ADFB-4C82-A76F-077E81022639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails.Common", "Trails.Common\Trails.Common.csproj", "{E20AF20A-F6AF-4BFE-994B-463D0F5E2696}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{46AFC2C6-ADFB-4C82-A76F-077E81022639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46AFC2C6-ADFB-4C82-A76F-077E81022639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46AFC2C6-ADFB-4C82-A76F-077E81022639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20AF20A-F6AF-4BFE-994B-463D0F5E2696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20AF20A-F6AF-4BFE-994B-463D0F5E2696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20AF20A-F6AF-4BFE-994B-463D0F5E2696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20AF20A-F6AF-4BFE-994B-463D0F5E2696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
