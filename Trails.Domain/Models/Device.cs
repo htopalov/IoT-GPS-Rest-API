@@ -12,7 +12,7 @@ namespace Trails.Domain.Models
         }
 
         [Key]
-        [MaxLength(DeviceValidationConstants.DEVICE_ID_MAX_LENGTH)]
+        [MaxLength(DeviceValidationConstants.DEVICE_ID_LENGTH)]
         public string DeviceId { get; set; }
 
         [Required]
@@ -20,12 +20,13 @@ namespace Trails.Domain.Models
         public string Name { get; set; }
 
         [Required]
-        [MaxLength(DeviceValidationConstants.DEVICE_SIM_CARD_NUMBER_MAX_LENGTH)]
         public string SimCardNumber { get; set; }
 
         [MaxLength(DeviceValidationConstants.DEVICE_DESCRIPTION_MAX_LENGTH)]
         public string Description { get; set; }
 
+        //TODO: Get password hashing from identity
+        [Required]
         public string PasswordHash { get; set; }
 
         public virtual ICollection<PositionData> PositionData { get; set; }

@@ -148,12 +148,13 @@ void loop() {
  }
          if(curr_latitude == 0 || curr_longitude == 0)
          {
-           Serial.println("Incorrect GPS data!");
+           Serial.println("Incorrect/Missing GPS data!");
            Serial.println("Disconnecting from network!");
            client.stop();
            modem.gprsDisconnect();
-           return;
+           esp_deep_sleep_start();
          }
+         
 
          doc["latitude"]   = curr_latitude;
          doc["longitude"]  = curr_longitude;

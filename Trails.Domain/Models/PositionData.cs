@@ -9,8 +9,7 @@ namespace Trails.Domain.Models
         [Key]
         public Guid DataId { get; set; }
 
-        [Required]
-        public string Timestamp { get; set; }
+        public DateTime Timestamp { get; set; }
 
         public double Latitude { get; set; }
 
@@ -21,6 +20,7 @@ namespace Trails.Domain.Models
         public double Speed { get; set; }
 
         [ForeignKey(nameof(Device))]
+        [Required]
         public string DeviceId { get; set; }
 
         public virtual Device Device { get; set; }

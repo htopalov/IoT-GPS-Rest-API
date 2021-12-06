@@ -33,7 +33,7 @@ namespace Trails.Services.PositionDataService
             {
                 return false;
             }
-            positionData.Timestamp = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
+            positionData.Timestamp = DateTime.UtcNow;
             await dataContext.PositionData.AddAsync(positionData);
             var created = await dataContext.SaveChangesAsync();
             return created > 0;
